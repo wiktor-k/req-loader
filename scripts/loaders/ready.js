@@ -1,7 +1,7 @@
 /**
  * Notifies dependencies when DOM is loaded for example: "ready!".
  */
-define('ready', [], function() {
+define('../loaders/ready', [], function() {
     return {
         load: function(name, parentRequire, load, config) {
             if (document.readyState === "complete") {

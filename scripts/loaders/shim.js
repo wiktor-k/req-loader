@@ -3,7 +3,7 @@
  * For example dependency: "shim!underscore.js:_" loads underscore.js file
  * and captures variable "_" as module definition.
  */
-define('shim', [], function() {
+define('../loaders/shim', [], function() {
     return {
         load: function (name, parentRequire, load, config) {
             var path = name.substring(0, name.indexOf(':'));

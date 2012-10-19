@@ -1,4 +1,4 @@
-define('models/rect', ['models/point', 'text!file.txt'], function(Point, text) {
+define('models/rect', ['models/point', '../loaders/text!file.txt'], function(Point, text) {
     console.log("=====> Loading Rect");
     function Rect(topLeft, bottomRight) {
         this.topLeft = topLeft;

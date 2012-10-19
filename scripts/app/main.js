@@ -1,4 +1,4 @@
-define('main', ['models/rect', 'models/point', 'shim!underscore.js:_', 'ready!'], function(Rect, Point, _) {
+define('main', ['models/rect', 'models/point', '../loaders/shim!lib/underscore.js:_', '../loaders/ready!'], function(Rect, Point, _) {
     console.log("=====> Loading Main");
 
     var r = new Rect(new Point(1, 1), new Point(20, 20));

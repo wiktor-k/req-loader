@@ -1,7 +1,7 @@
 /**
  * Loads resource as string for example: "text!file.txt".
  */
-define('text', [], function() {
+define('../loaders/text', [], function() {
     return {
         load: function(name, parentRequire, load, config) {
             var xhr = new XMLHttpRequest();

@@ -217,9 +217,9 @@
 
     var mainName = mainPath;
 
-    if (mainPath.indexOf("/") > -1) {
-        registry.root = mainPath.substring(0, mainPath.indexOf("/") + 1);
-        mainName = mainPath.substring(mainPath.indexOf("/") + 1)
+    if (mainPath.lastIndexOf("/") > -1) {
+        registry.root = mainPath.substring(0, mainPath.lastIndexOf("/") + 1);
+        mainName = mainPath.substring(mainPath.lastIndexOf("/") + 1)
     }
 
     registry.addComponent(new Component(mainName))

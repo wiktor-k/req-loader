@@ -1,4 +1,4 @@
-define('models/point', ['text!file.txt'], function(text) {
+define('models/point', ['../loaders/text!file.txt'], function(text) {
     console.log("=====> Loading Point");
     function Point(x, y) {
         this.x = x;
